@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barber Shop</title>
     <link rel="stylesheet" href="./css/style.css" />
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    
   <body>
-    <header>
-      <a href="">
-        <img src="./images/logo.svg" alt="logo" />
-      </a>
+    <header class="header-box">
       <nav>
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Услуги и цены</a></li>
-          <li><a href="">Мастера</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="navigation-box" >
+          <li><a href="#about" class="navigation">О нас</a></li>
+          <li><a href="#prices" class="navigation">Услуги и цены</a></li>
+          <li><a href="#masters" class="navigation">Мастера</a></li>
+          <li><a href="#contacts" class="navigation">Контакты</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">ОНЛАЙН-ЗАПИСЬ</button>
+      <div class="contacts-box" >
+      <a href="tel:+380441111111" class="navigation">+38 044 111 11 11</a>
+      <button type="button" class="button">онлайн-запись</button>
+      </div>
     </header>
     <main>
-      <section>
+      <section class="hero-box">
+        <a href="">
+        <img src="./images/logo.svg" alt="logo" />
+        </a>
         <ul>
           <li>
             <a href="" target="_blank">Instagram</a>
@@ -40,93 +46,107 @@
           Работаем быстро, осторожно и со вкусом.
         </p>
       </section>
-      <section>
+      <section id="about" class="about-box">
         <!-- h2 -->
-        <img src="./images/img 1.jpg" alt="барбер бреет шею" />
-        <img src="./images/img 2.jpg" alt="барбер бреет шею 1" />
-        <p>О НАС</p>
-        <h2>Лучший Барбершоп твоего города</h2>
-        <p>
+        <img class="about-img-first" src="./images/img 1.jpg" alt="барбер бреет шею" width="270px" height="445px"/>
+        <img class="about-img-second" src="./images/img 2.jpg" alt="барбер бреет шею 1" width="270px" height="445px" />
+        <div class="about-text">
+        <p class="about">О НАС</p>
+        <h2 class="about-h">Лучший Барбершоп твоего города</h2>
+        <p class="about-main-p">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
           нам.
         </p>
-        <p>
+        <p class="about-p">
           Мы команда, которая никогда не останавливается на достигнутом и жаждет
           перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
           сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
           волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
           приходит!
         </p>
-        <button type="button">ОНЛАЙН-ЗАПИСЬ</button>
+        <button type="button" class="button-about">ОНЛАЙН-ЗАПИСЬ</button>
+        </div>
+        
       </section>
-      <section>
-        <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
-        <ul>
-          <li>
+
+      <section id="prices" class="price-box">
+        <p class="price">Проведи время в компании лучших мастеров</p>
+        <h2 class="price-h" >Услуги и цены</h2>
+        <div class="price-table">
+        <ul class="table-left">
+            <li class="t-flex">
             <p>Мужская стрижка</p>
             <p>от 300 грн.</p>
           </li>
-          <li>
+          <li class="table-flex">
             <p>Стрижка бороды</p>
             <p>от 200 грн.</p>
           </li>
-          <li>
+          <li class="table-flex">
             <p>Стрижка усов</p>
             <p>от 200 грн.</p>
           </li>
-          <li>
+          <li class="table-flex">
             <p>Бритье опасной бритвой</p>
             <p>от 200 грн.</p>
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul class="table-right">
+          <li class="t-flex">
             <p>Cтрижка у стажера</p>
             <p>от 50 грн.</p>
           </li>
-          <li>
+          <li class="table-flex">
             <p>Стрижка под насадку</p>
             <p>от 200 грн.</p>
           </li>
-          <li>
+          <li class="table-flex">
             <p>Детская стрижка (до 12 лет)</p>
             <p>от 300 грн.</p>
           </li>
-          <li>
+          <li class="table-flex">
             <p>Камуфлирование седины</p>
             <p>от 200 грн.</p>
           </li>
         </ul>
-        <button type="button">ОНЛАЙН-ЗАПИСЬ</button>
+        </div>
+        <button type="button" class="price-button">ОНЛАЙН-ЗАПИСЬ</button>
       </section>
-      <section>
-        <ul>
-          <li>
-            <p>600</p>
-            <p>Довольных клиентов в день</p>
-          </li>
-          <li>
-            <p>20</p>
-            <p>Лучших мастеров Киева</p>
-          </li>
-          <li>
-            <p>50</p>
-            <p>Наград за отличный сервис</p>
-          </li>
-          <li>
-            <p>100</p>
-            <p>Подарков постоянным клиентам</p>
-          </li>
-        </ul>
-        <p>старая традиционная школа</p>
-        <h2>Почему приходят именно к нам?</h2>
-        <p>
+      <section class="tradition-school" >
+        <div>
+          <ul class="results" >
+            <li class="result" >
+              <p class="points">600</p>
+              <p class="name-points">Довольных клиентов в день</p>
+            </li>
+            <li class="result" >
+              <p class="points">20</p>
+              <p class="name-points">Лучших мастеров Киева</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="results-next" >     
+            <li class="result">
+              <p  class="points" >50</p>
+              <p class="name-points" >Наград за отличный сервис</p>
+            </li>
+            <li class="result">
+              <p class="points ">100</p>
+              <p class="name-points correct">Подарков постоянным клиентам</p>
+            </li>
+          </ul>
+        </div>
+        <div >
+        <p class="tradition" >старая традиционная школа</p>
+        <h2 class="tradition-h">Почему приходят именно к нам?</h2>
+        <p class="tradition-main-p">
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
           чем 10 раз прочитать.
         </p>
+        </div>
       </section>
-      <section>
+      <section id="masters">
         <p>для настоящих ценителей атмосферы</p>
         <h2>Наши мастера</h2>
         <ul>
@@ -233,7 +253,7 @@
               width="370"
               height="346"
             />
-            <p>Alan Black</p>
+            <р>Alan Black</p>
             <p>Extreme Barber</p>
             <ul>
               <li>
@@ -278,14 +298,68 @@
       </section>
       <section>
         <p>На латинском языке “барба” означает “борода”</p>
+        <h2 hidden>Галерея</h2>
+        
         <ul>
-          <li><img src="./images/process 1.jpg" alt="process" /></li>
-          <li><img src="./images/process 2.jpg" alt="process" /></li>
-          <li><img src="./images/process 3.jpg" alt="process" /></li>
-          <li><img src="./images/process 4.jpg" alt="process" /></li>
+          <li>
+            <img
+              src="./images/process 1.jpg"
+              alt="process"
+              width="270px"
+              height="360px"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/process 2.jpg"
+              alt="process"
+              width="270px"
+              height="360px"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/process 3.jpg"
+              alt="process"
+              width="270px"
+              height="360px"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/process 4.jpg"
+              alt="process"
+              width="270px"
+              height="360px"
+            />
+          </li>
         </ul>
       </section>
-      <section></section>
+      <section>
+        <p>Онлайн-запись</p>
+      </section>
+      <section id="contacts">
+        <h2>Контакты</h2>
+        <address>
+          <ul>
+            <li><a href="https://goo.gl/maps/L1VLxh4qx6kYqFRQ7" target="_blank" rel="noopener, noreferrer"> ул. Васильковая, 7А Киев, 08132</a></li>
+            <li><a href="tel:+3804411111111" class="contact link"
+            >+38 044 111 11 11</a></li>
+            <li><a href="mailto:barbershop@email.com" class="contact link"
+            >barbershop@email.com</a></li>
+          </ul>       
+        </address>
+        <p>время работы</p>
+        <p>Ежедневно с 9:00 до 22:00</p>
+      </section>
+      <footer>
+        <p>&copy; Copyright 2020</p>
+        <ul>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Youtube</a></li>
+        </ul>
+
+      </footer>
     </main>
   </body>
 </html>
